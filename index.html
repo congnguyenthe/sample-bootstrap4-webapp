@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
   <!-- Tempusdominus Bootstrap 4 -->
   <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- iCheck -->
@@ -131,90 +134,71 @@
     <!-- Main content -->
     <section class="content">
       <div class="row">
-        <div class="col-md-2">
-          <a href="compose.html" class="btn btn-primary btn-block mb-3">Compose</a>
-
-          <div class="card">
+        <div class="col-md-3">
+          <div class="card card-primary card-outline">
             <div class="card-header">
-              <h3 class="card-title">Folders</h3>
-
+              <h3 class="card-title">
+                <i class="fas fa-edit"></i>
+                Filter Questions
+              </h3>
               <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                  <i class="fas fa-minus"></i>
-                </button>
+                <button type="button" class="btn btn-block btn-info">Apply</button>
               </div>
             </div>
-            <div class="card-body p-0">
-              <ul class="nav nav-pills flex-column">
-                <li class="nav-item active">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-inbox"></i> Inbox
-                    <span class="badge bg-primary float-right">12</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-envelope"></i> Sent
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-file-alt"></i> Drafts
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-filter"></i> Junk
-                    <span class="badge bg-warning float-right">65</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-trash-alt"></i> Trash
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- /.card-body -->
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Labels</h3>
-
-              <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                  <i class="fas fa-minus"></i>
-                </button>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="form-group">
+                <label>Grade</label>
+                <select class="select2" multiple="multiple" data-placeholder="Choose grade(s)" style="width: 100%;">
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
               </div>
-            </div>
-            <div class="card-body p-0">
-              <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-circle text-danger"></i>
-                    Important
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-circle text-warning"></i> Promotions
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-circle text-primary"></i>
-                    Social
-                  </a>
-                </li>
-              </ul>
+              <div class="form-group">
+                <label>Level</label>
+                <select class="select2" multiple="multiple" data-placeholder="Choose level(s)" style="width: 100%;">
+                  <option>A2</option>
+                  <option>A1</option>
+                  <option>B2</option>
+                  <option>B1</option>
+                  <option>C2</option>
+                  <option>C1</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Certificate</label>
+                <select class="select2" multiple="multiple" data-placeholder="Choose certificate(s)" style="width: 100%;">
+                  <option>IELTS</option>
+                  <option>TOEFL</option>
+                  <option>TOEIC</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Topic</label>
+                <select class="select2" multiple="multiple" data-placeholder="Choose topic(s)" style="width: 100%;">
+                  <option>Adjectives</option>
+                  <option>Adverbs</option>
+                  <option>Articles</option>
+                  <option>Conditional</option>
+                  <option>Nouns</option>
+                  <option>Passive Voice</option>
+                  <option>Relative Clauses</option>
+                  <option>Reported Speech</option>
+                  <option>Tenses</option>
+                  <option>Verbs</option>
+                  <option>Word Order</option>
+                </select>
+              </div>
             </div>
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
         </div>
         <!-- /.col -->
-        <div class="col-md-10">
+        <div class="col-md-9">
           <div class="card card-primary card-outline">
             <div class="card-header">
               <div class="mailbox-controls">
@@ -243,247 +227,269 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body p-0">
-              <div class="table-responsive mailbox-messages">
-                <table class="table table-hover table-striped">
-                  <tbody>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check1">
-                        <label for="check1"></label>
+              <div class="card card-solid">
+                <div class="card-body pb-0">
+                  <div class="row d-flex align-items-stretch">
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check1">
+                                <label for="check1"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>1. There are one thousand?</h5><br>
+                            A: How many are there grams in a kilogram?<br>
+                            B: How many grams are there in a kilogram?<br>
+                            C: How many grams are they in a kilogram?<br>
+                            D: How many grams are there of a kilogram?<br>
+                            E: How much grams in a kilogram?
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">5 mins ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check2">
-                        <label for="check2"></label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check2">
+                                <label for="check2"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>2. I dislike ________ to the movies by myself.</h5><br>
+                            A: going<br>
+                            B: to go<br>
+                            C: going/to go <br>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
-                    <td class="mailbox-date">28 mins ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check3">
-                        <label for="check3"></label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check3">
+                                <label for="check3"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>3. We started ________ dinner without you.</h5><br>
+                            A: eating<br>
+                            B: to eat<br>
+                            C: eating/to eat <br>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
-                    <td class="mailbox-date">11 hours ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check4">
-                        <label for="check4"></label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check4">
+                                <label for="check4"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>4. I can't imagine ________ my own house.</h5><br>
+                            A: buying<br>
+                            B: to buy<br>
+                            C: buying/to buy <br>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">15 hours ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check5">
-                        <label for="check5"></label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check5">
+                                <label for="check5"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>5. I used ________ that television show all the time.</h5><br>
+                            A: watching<br>
+                            B: to watch<br>
+                            C: watching/to watch <br>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
-                    <td class="mailbox-date">Yesterday</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check6">
-                        <label for="check6"></label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check6">
+                                <label for="check6"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>6. I always eat breakfast before ________ to school.</h5><br>
+                            A: going<br>
+                            B: to go<br>
+                            C: going/to go <br>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
-                    <td class="mailbox-date">2 days ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check7">
-                        <label for="check7"></label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check7">
+                                <label for="check7"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>7. When do you practise ________ the piano?</h5><br>
+                            A: playing<br>
+                            B: to play<br>
+                            C: playing/to play <br>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
-                    <td class="mailbox-date">2 days ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check8">
-                        <label for="check8"></label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check8">
+                                <label for="check8"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>8. My grandmother prefers ________ science fiction books.</h5><br>
+                            A: reading<br>
+                            B: to read<br>
+                            C: reading/to read <br>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">2 days ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check9">
-                        <label for="check9"></label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check9">
+                                <label for="check9"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5> 9. My teacher said my essay needs ________ by tomorrow.</h5><br>
+                            A: correcting<br>
+                            B: to correct<br>
+                            C: corrected<br>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">2 days ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check10">
-                        <label for="check10"></label>
-                      </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">2 days ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check11">
-                        <label for="check11"></label>
-                      </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
-                    <td class="mailbox-date">4 days ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check12">
-                        <label for="check12"></label>
-                      </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">12 days ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check13">
-                        <label for="check13"></label>
-                      </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
-                    <td class="mailbox-date">12 days ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check14">
-                        <label for="check14"></label>
-                      </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
-                    <td class="mailbox-date">14 days ago</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="icheck-primary">
-                        <input type="checkbox" value="" id="check15">
-                        <label for="check15"></label>
-                      </div>
-                    </td>
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
-                    </td>
-                    <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
-                    <td class="mailbox-date">15 days ago</td>
-                  </tr>
-                  </tbody>
-                </table>
-                <!-- /.table -->
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
               </div>
-              <!-- /.mail-box-messages -->
+              <!-- /.card -->
             </div>
             <!-- /.card-body -->
             <div class="card-footer p-0">
               <div class="mailbox-controls">
-                <!-- Check all button -->
-                <button type="button" class="btn btn-default btn-sm checkbox-toggle">
-                  <i class="far fa-square"></i>
-                </button>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default btn-sm">
-                    <i class="far fa-trash-alt"></i>
-                  </button>
-                  <button type="button" class="btn btn-default btn-sm">
-                    <i class="fas fa-reply"></i>
-                  </button>
-                  <button type="button" class="btn btn-default btn-sm">
-                    <i class="fas fa-share"></i>
-                  </button>
-                </div>
-                <!-- /.btn-group -->
-                <button type="button" class="btn btn-default btn-sm">
-                  <i class="fas fa-sync-alt"></i>
-                </button>
                 <div class="float-right">
                   1-50/200
                   <div class="btn-group">
@@ -535,6 +541,8 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="plugins/select2/js/select2.full.min.js"></script>
 <!-- ChartJS -->
 <script src="plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
@@ -563,5 +571,11 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- BS-Stepper -->
 <script src="../../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+  })
+</script>
 </body>
 </html>
