@@ -41,14 +41,45 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">About</a>
+      </li>
     </ul>
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
         </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="false" href="#" role="button">
@@ -73,37 +104,101 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
+              <p> New </p>
+            </a>
+          </li>
+          <li class="nav-header">FILES</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-circle nav-icon"></i>
+              <p>My Quiz</p>
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/charts/chartjs.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>English</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/flot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Japanese</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/inline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Korean</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
               <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
+                Draft
+                <span class="badge badge-info right">6</span>
               </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
-            </a>
-          </li>
-          <li class="nav-header">LABELS</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-danger"></i>
-              <p class="text">Important</p>
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Starred
+                <span class="badge badge-info right">6</span>
+              </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p>Warning</p>
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Recent
+                <span class="badge badge-info right">6</span>
+              </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-info"></i>
-              <p>Informational</p>
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Trash
+                <span class="badge badge-info right">6</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-header">PROFILE</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Profile
+                <span class="badge badge-info right">6</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Pricings
+                <span class="badge badge-info right">6</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Settings
+                <span class="badge badge-info right">6</span>
+              </p>
             </a>
           </li>
         </ul>
@@ -119,14 +214,18 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-left">
+            <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item">English Quiz</li>
-              <li class="breadcrumb-item active">A New English Quiz Title</li>
+              <li class="breadcrumb-item">
+                A NEW QUIZ NAME
+                <i class="fas fa-edit"></i>
+              </li>
             </ol>
           </div>
           <div class="col-sm-6">
             <button type="button" class="btn btn-success float-right" style="width: 150px;">Done</button>
+            <button type="button" class="btn btn-danger float-right mr-2" style="width: 150px;">Cancel</button>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -138,7 +237,6 @@
           <div class="card card-primary card-outline">
             <div class="card-header">
               <h3 class="card-title">
-                <i class="fas fa-edit"></i>
                 Filter Questions
               </h3>
               <div class="card-tools">
@@ -220,8 +318,8 @@
                 <button type="button" class="btn btn-default btn-sm">
                   <i class="fas fa-sync-alt"></i>
                 </button>
-                
-                <button type="button" class="btn btn-sm btn-danger float-right">Clear All</button>
+                <button type="button" class="btn btn-sm btn-success float-right" style="width: 100px;">Save</button>
+                <button type="button" class="btn btn-sm btn-danger float-right mr-2" style="width: 100px;">Clear All</button>
               </div>
               <!-- /.card-tools -->
             </div>
