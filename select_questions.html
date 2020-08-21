@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="../../plugins/bs-stepper/css/bs-stepper.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">About</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="user-panel">
+          <div class="image">
+            <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Printable Quiz</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary mt-2" style="width: 100%; height: 40px;">
+              <i class="nav-icon fas fa-plus"></i> New
+            </button>
+          </li>
+          <li class="nav-header mt-2">FILES</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-folder-plus nav-icon"></i>
+              <p>My Quiz</p>
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/charts/chartjs.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>English</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/flot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Japanese</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/inline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Korean</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file-signature"></i>
+              <p>
+                Draft
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-star"></i>
+              <p>
+                Starred
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-clock"></i>
+              <p>
+                Recent
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-trash-alt"></i>
+              <p>
+                Trash
+              </p>
+            </a>
+          </li>
+          <li class="nav-header mt-2">PROFILE</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-address-card"></i>
+              <p>
+                Profile
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-credit-card"></i>
+              <p>
+                Pricings
+              </p>
+            </a>
+          </li>
+          <li class="nav-header mt-2">SITE SETTINGS</li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-slide="false" href="#" role="button">
+              <i class="nav-icon fas fa-tools"></i>
+              <p> Configs </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item">English Quiz</li>
+              <li class="breadcrumb-item">
+                A NEW QUIZ NAME
+                <i class="fas fa-edit"></i>
+              </li>
+            </ol>
+          </div>
+          <div class="col-sm-6">
+            <button type="button" class="btn btn-success float-right" style="width: 150px;">Done</button>
+            <button type="button" class="btn btn-danger float-right mr-2" style="width: 150px;">Cancel</button>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card card-primary card-outline">
+            <div class="card-header">
+              <h3 class="card-title">
+                Filter Questions
+              </h3>
+              <div class="card-tools">
+                <button type="button" class="btn btn-block btn-info">Apply</button>
+              </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="form-group">
+                <label>Grade</label>
+                <select class="select2" multiple="multiple" data-placeholder="Choose grade(s)" style="width: 100%;">
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Level</label>
+                <select class="select2" multiple="multiple" data-placeholder="Choose level(s)" style="width: 100%;">
+                  <option>A2</option>
+                  <option>A1</option>
+                  <option>B2</option>
+                  <option>B1</option>
+                  <option>C2</option>
+                  <option>C1</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Certificate</label>
+                <select class="select2" multiple="multiple" data-placeholder="Choose certificate(s)" style="width: 100%;">
+                  <option>IELTS</option>
+                  <option>TOEFL</option>
+                  <option>TOEIC</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Topic</label>
+                <select class="select2" multiple="multiple" data-placeholder="Choose topic(s)" style="width: 100%;">
+                  <option>Adjectives</option>
+                  <option>Adverbs</option>
+                  <option>Articles</option>
+                  <option>Conditional</option>
+                  <option>Nouns</option>
+                  <option>Passive Voice</option>
+                  <option>Relative Clauses</option>
+                  <option>Reported Speech</option>
+                  <option>Tenses</option>
+                  <option>Verbs</option>
+                  <option>Word Order</option>
+                </select>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-9">
+          <div class="card card-primary card-outline">
+            <div class="card-header">
+              <div class="mailbox-controls">
+                <!-- Check all button -->
+                <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="far fa-square"></i>
+                </button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default btn-sm">
+                    <i class="far fa-trash-alt"></i>
+                  </button>
+                  <button type="button" class="btn btn-default btn-sm">
+                    <i class="fas fa-reply"></i>
+                  </button>
+                  <button type="button" class="btn btn-default btn-sm">
+                    <i class="fas fa-share"></i>
+                  </button>
+                </div>
+                <!-- /.btn-group -->
+                <button type="button" class="btn btn-default btn-sm">
+                  <i class="fas fa-sync-alt"></i>
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-info float-right" style="width: 100px;">Save</button>
+                <button type="button" class="btn btn-sm btn-outline-warning float-right mr-2" style="width: 100px;">Clear All</button>
+              </div>
+              <!-- /.card-tools -->
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body p-0">
+              <div class="card card-solid">
+                <div class="card-body pb-0">
+                  <div class="row d-flex align-items-stretch">
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check1">
+                                <label for="check1"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>1. There are one thousand?</h5><br>
+                            A: How many are there grams in a kilogram?<br>
+                            B: How many grams are there in a kilogram?<br>
+                            C: How many grams are they in a kilogram?<br>
+                            D: How many grams are there of a kilogram?<br>
+                            E: How much grams in a kilogram?
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check2">
+                                <label for="check2"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>2. I dislike ________ to the movies by myself.</h5><br>
+                            A: going<br>
+                            B: to go<br>
+                            C: going/to go <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check3">
+                                <label for="check3"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>3. We started ________ dinner without you.</h5><br>
+                            A: eating<br>
+                            B: to eat<br>
+                            C: eating/to eat <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check4">
+                                <label for="check4"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>4. I can't imagine ________ my own house.</h5><br>
+                            A: buying<br>
+                            B: to buy<br>
+                            C: buying/to buy <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check5">
+                                <label for="check5"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>5. I used ________ that television show all the time.</h5><br>
+                            A: watching<br>
+                            B: to watch<br>
+                            C: watching/to watch <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check6">
+                                <label for="check6"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>6. I always eat breakfast before ________ to school.</h5><br>
+                            A: going<br>
+                            B: to go<br>
+                            C: going/to go <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check7">
+                                <label for="check7"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>7. When do you practise ________ the piano?</h5><br>
+                            A: playing<br>
+                            B: to play<br>
+                            C: playing/to play <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check8">
+                                <label for="check8"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5>8. My grandmother prefers ________ science fiction books.</h5><br>
+                            A: reading<br>
+                            B: to read<br>
+                            C: reading/to read <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch" style="width: 100%;">
+                      <div class="card bg-light">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check9">
+                                <label for="check9"></label>
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                              <i class="fas fa-star text-warning float-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body pt-0">
+                          <div class="row">
+                            <h5> 9. My teacher said my essay needs ________ by tomorrow.</h5><br>
+                            A: correcting<br>
+                            B: to correct<br>
+                            C: corrected<br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer p-0">
+              <div class="mailbox-controls">
+                <div class="float-right">
+                  1-50/200
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm">
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm">
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+                  <!-- /.btn-group -->
+                </div>
+                <!-- /.float-right -->
+              </div>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.1.0-pre
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="plugins/select2/js/select2.full.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- Ionicon -->
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<!-- BS-Stepper -->
+<script src="../../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+  })
+</script>
+</body>
+</html>
