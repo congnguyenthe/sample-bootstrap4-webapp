@@ -5,6 +5,32 @@ page {
   margin-bottom: 0.5cm;
   box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
 }
+topleft {
+  margin-top: 0.5cm;
+  margin-left: 0.5cm;
+}
+topright {
+  margin-top: 0.5cm;
+  margin-right: 0.5cm;
+}
+
+topcenter {
+  margin-top: 0.5cm;
+}
+
+bottomleft {
+  margin-top: 0.5cm;
+  margin-right: 0.5cm;
+}
+bottomcenter {
+  margin-top: 0.5cm;
+  margin-right: 0.5cm;
+}
+bottomright {
+  margin-top: 0.5cm;
+  margin-right: 0.5cm;
+}
+
 page[size="A4"] {  
   width: 21cm;
   height: 29.7cm; 
