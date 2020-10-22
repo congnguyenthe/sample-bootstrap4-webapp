@@ -1,0 +1,223 @@
+desc: (none)
+cmd: ./brushing_classification
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=143056
+mem_heap_B=519
+mem_heap_extra_B=17
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=143088
+mem_heap_B=529
+mem_heap_extra_B=31
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=149457
+mem_heap_B=533
+mem_heap_extra_B=51
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=149501
+mem_heap_B=537
+mem_heap_extra_B=71
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=149533
+mem_heap_B=2613
+mem_heap_extra_B=83
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=149565
+mem_heap_B=4661
+mem_heap_extra_B=91
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=149611
+mem_heap_B=4665
+mem_heap_extra_B=111
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=149660
+mem_heap_B=4665
+mem_heap_extra_B=111
+mem_stacks_B=0
+heap_tree=peak
+n4: 4665 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2076 0x108802: calculate_sum_area (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+  n1: 2076 0x108F4A: data_processing (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+   n0: 2076 0x108FDF: main (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+ n1: 2048 0x108810: calculate_sum_area (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+  n1: 2048 0x108F4A: data_processing (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+   n0: 2048 0x108FDF: main (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+ n1: 519 0x108F00: data_processing (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+  n0: 519 0x108FDF: main (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+ n0: 22 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=149660
+mem_heap_B=4661
+mem_heap_extra_B=91
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=149694
+mem_heap_B=4677
+mem_heap_extra_B=99
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=249335
+mem_heap_B=2601
+mem_heap_extra_B=87
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=274725
+mem_heap_B=553
+mem_heap_extra_B=79
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=274754
+mem_heap_B=537
+mem_heap_extra_B=71
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=274783
+mem_heap_B=533
+mem_heap_extra_B=51
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=274825
+mem_heap_B=2581
+mem_heap_extra_B=59
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=274857
+mem_heap_B=4657
+mem_heap_extra_B=71
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=274889
+mem_heap_B=4661
+mem_heap_extra_B=91
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=391595
+mem_heap_B=4657
+mem_heap_extra_B=71
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4657 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2076 0x108B44: calculate_histogram (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+  n1: 2076 0x108F63: data_processing (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+   n0: 2076 0x108FDF: main (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+ n1: 2048 0x108B36: calculate_histogram (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+  n1: 2048 0x108F63: data_processing (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+   n0: 2048 0x108FDF: main (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+ n1: 519 0x108F00: data_processing (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+  n0: 519 0x108FDF: main (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+ n0: 14 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=391624
+mem_heap_B=2609
+mem_heap_extra_B=63
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=391653
+mem_heap_B=533
+mem_heap_extra_B=51
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=391685
+mem_heap_B=14
+mem_heap_extra_B=34
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=391713
+mem_heap_B=15
+mem_heap_extra_B=57
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=391780
+mem_heap_B=5
+mem_heap_extra_B=43
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=391809
+mem_heap_B=1
+mem_heap_extra_B=23
+mem_stacks_B=0
+heap_tree=empty

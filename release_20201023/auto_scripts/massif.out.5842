@@ -1,0 +1,95 @@
+desc: (none)
+cmd: ./brushing_classification K-1_1_01_SPD.txt
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=151668
+mem_heap_B=519
+mem_heap_extra_B=17
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=151700
+mem_heap_B=529
+mem_heap_extra_B=31
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=151759
+mem_heap_B=1081
+mem_heap_extra_B=47
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=152156
+mem_heap_B=1081
+mem_heap_extra_B=47
+mem_stacks_B=0
+heap_tree=detailed
+n3: 1081 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 552 0x4EB1EB8: fopen@@GLIBC_2.2.5 (iofopen.c:65)
+  n1: 552 0x1089CE: get_file_data (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+   n1: 552 0x1092A4: data_processing (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+    n0: 552 0x10947C: main (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+ n1: 519 0x10927B: data_processing (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+  n0: 519 0x10947C: main (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+ n0: 10 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=152156
+mem_heap_B=529
+mem_heap_extra_B=31
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=152385
+mem_heap_B=1553
+mem_heap_extra_B=39
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=154991
+mem_heap_B=1553
+mem_heap_extra_B=39
+mem_stacks_B=0
+heap_tree=peak
+n3: 1553 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x4EB11FA: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4EC13E7: _IO_doallocbuf (genops.c:365)
+   n1: 1024 0x4EC0506: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:759)
+    n1: 1024 0x4EBEA5B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1266)
+     n1: 1024 0x4EB3AFD: puts (ioputs.c:40)
+      n1: 1024 0x108A32: get_file_data (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+       n1: 1024 0x1092A4: data_processing (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+        n0: 1024 0x10947C: main (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+ n1: 519 0x10927B: data_processing (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+  n0: 519 0x10947C: main (in /home/vsa/workspace/git_GVH373/release_20201023/auto_scripts/brushing_classification)
+ n0: 10 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=154991
+mem_heap_B=529
+mem_heap_extra_B=31
+mem_stacks_B=0
+heap_tree=empty
